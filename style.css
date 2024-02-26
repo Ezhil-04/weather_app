@@ -1,0 +1,160 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    background-color: rgb(19, 35, 63);
+    display:flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.wrapper{
+    
+    padding: 20px;
+    border-radius: 10px;
+    background-image: linear-gradient(to bottom ,rgb(78, 250, 150), rgb(65, 218, 245), rgb(12, 226, 162));
+     /* background-color: chartreuse; */
+     width: 20rem;
+     height: 30rem;
+     display: grid;
+     grid-template-rows: 20% 30% 15% 10% 25%;
+     border-radius: 10px;
+     overflow: hidden;
+}
+.search{
+    background-color:transparent;}
+.image{
+  
+  background-color:transparent;}
+.temp{
+    background-color:transparent;}
+.city{
+    background-color:transparent;
+}
+.info{
+    background-color:transparent;
+}
+.search{
+    
+    display:flex;
+    justify-content: space-around;
+align-items: center;
+}
+.search-box{
+    /* overflow: hidden; */
+    
+    background-color:transparent;
+    width: 230px;
+    height: 35px;
+
+}
+.search-box input{
+    padding-left:15px ;
+    border:0;
+    outline: 0;
+       border-radius: 45px;
+    height: 100%;
+    width: 95%;
+    font-size: medium;
+}
+
+.search-icon{
+    border-radius: 50px;
+    background-color:rgb(255, 255, 255);
+    padding: 7px;
+    
+    height:32px;
+    width: 32px;
+}
+.search-icon:hover{
+    
+}
+.search-icon img{
+    object-fit: contain;
+    object-position: center;
+    max-width: 100%;
+    max-height: 100%;
+}
+.image{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.image img{
+    height: 110px;
+}
+.temp{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.temp h1{
+    color: aliceblue;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-stretch: ultra-expanded;
+    font-weight: 200;
+    letter-spacing: 2px;
+}
+.city{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.city h2{
+    color: aliceblue;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-stretch: ultra-expanded;
+    font-weight: 100;
+    font-size: 1rem;
+    letter-spacing: 4px;
+}
+.info{
+    display: flex;
+    justify-content: space-around;
+}
+.humidity{
+    color: aliceblue;
+    padding-right: 5px;
+    display: grid;
+    background-color:transparent;
+    height: 100px;
+    width: 115px;
+}
+.wind{
+    margin-right: 10px;
+    color: aliceblue;
+   padding-right: ;
+    display: grid;
+    background-color: transparent;
+    height: 100px;
+    width: 115px;
+}
+.up{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.up h2{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1rem;
+    font-weight: 200;
+}
+
+.up img{
+    width: 40px;
+}
+#name{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: .8rem;
+    font-weight: 100;
+}
+
+.part{
+    background-color: blueviolet;
+    height: 25rem;
+    
+}

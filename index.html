@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>weather</title>
+</head>
+<link rel="stylesheet" href="style.css">
+<link rel="icon" href="pic/weather.png">
+
+<body>
+    <div class="wrapper">
+        <div class="search">
+            <div class="search-box"><input id="search" type="text" id="city" placeholder="enter city"></div>
+        <div class="search-icon"><img id="icon" src="pic/loupe.png" alt=""></div>
+        </div>
+       
+        <div class="image">
+            <img id="image" src="pic/sun.png" alt="">
+        </div>
+        <div class="temp">
+            <h1 id="temperature"> 22°C</h1>
+        </div>
+        <div class="city">
+            <h2 id="city-name">Chennai</h2>
+        </div>
+        <div class="info">
+            <div class="humidity">
+                <div class="up">
+                    <img src="pic/humidity.png" alt="">
+                    <div class="text"><h2 id="humidity">64%</h2>
+                        <h2 id="name">Humidity</h2>                    
+                    </div>
+                    
+                </div>
+                
+            </div>
+            <div class="wind">
+                <div class="up">
+                    <img src="pic/wind.png" alt="">
+                    <div class="text"><h2 id="wind">18 km/h</h2>
+                        <h2 id="name">Wind speed</h2>                    
+                    </div>
+                </div>
+                
+            </div>
+           
+        </div>
+    
+    </div>
+   
+    
+    <script src="script.js"></script>
+</body>
+</html>
