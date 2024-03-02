@@ -35,16 +35,11 @@ let infoclass=document.querySelector(".info")
     if(data.cod==404)
     {
 
-        searchclass.style.margin=".5rem"
-        wrapper.style.height="3.5rem"
-        
-        imageclass.style.display="none"
-        templass.style.display="none"
-        cityclass.style.display="none"
-        infoclass.style.display="none"
-
-        city.innerHTML="city not found";
-        temp.innerHTML="";
+ 
+        temp.innerHTML="city not found"
+        city.innerHTML="";
+        city.style.fontSize="1rem"
+     
         humidity.innerHTML="";
         wind.innerHTML="";
     }
