@@ -13,6 +13,7 @@ icon.addEventListener("click",()=>
 
 
 async function checkweather(cityname){
+    const screenwidth=window.screen.width;
     console.clear()
     const response=await fetch(apiurl+cityname + `&appid=${apikey}`);
     var data =await response.json();
@@ -76,7 +77,7 @@ infoclass.style.display="flex"
             image.src="pic/mist.png"
 
         }
-        if(screenWidth < 600){
+        if(screenwidth < 600){
             wrapper.style.height="100vh"
         }
         else{ 
