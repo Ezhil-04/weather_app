@@ -158,9 +158,12 @@ align-items: center;
     height: 25rem;
     
 }
-
 @media only screen and (max-width:600px){
 
+    body{
+        
+        height: 100vh;
+    }
     .wrapper{
     
         padding: 20px;
@@ -179,24 +182,63 @@ align-items: center;
         border:0;
         outline: 0;
            border-radius: 45px;
-        height: 100%;
+        height: 115%;
         width: 105%;
-        font-size: medium;
+        font-size: 1.5rem;
     }
     .city h2{
         color: aliceblue;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
         font-stretch: ultra-expanded;
         font-weight: 100;
-        font-size: 1.5rem;
+        font-size: 2rem;
         letter-spacing: 4px;
     }
 
     .search-icon img{
         object-fit: contain;
         object-position: center;
-        max-width: 102%;
-        max-height: 102%;
+        width: 80%;
+        height: 80%;
+    }
+    #icon{
+        margin-top:3px ;
+        margin-left:3px;
+        height: 1.5rem;
+    }
+    .image img{
+        height: 15rem;
+ 
+    }
+
+    .search-icon{
+        margin-top:.5rem ;
+        border-radius: 50px;
+        background-color:rgb(255, 255, 255);
+        padding: 7px;
+        
+        height:45px;
+        width: 45px;
+    }
+    .search-box{
+        /* overflow: hidden; */
+        
+        background-color:transparent;
+        width: 250px;
+        height: 40px;
+    
+    }
+    .wind{
+        width: 10rem;
+      
+    }
+    .up  h2{
+        font-size: 1.4rem;
+    }
+    .up #name{
+        font-size: 1.2rem;
+    }
+    .humidity .up img{
+        margin-right: 10px;
     }
 }
-
