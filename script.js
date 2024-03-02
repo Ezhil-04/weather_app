@@ -76,9 +76,14 @@ infoclass.style.display="flex"
             image.src="pic/mist.png"
 
         }
-        wrapper.style.height="30rem"
+        if(screenWidth < 600){
+            wrapper.style.height="100vh"
+        }
+        else{ 
+            wrapper.style.height="30rem"
+        }
+       
     city.innerHTML=data.name;
-
     temp.innerHTML=Math.round(data.main.temp)+"°C";
     humidity.innerHTML=data.main.humidity+"%";
     wind.innerHTML=data.wind.speed+" km/h";
