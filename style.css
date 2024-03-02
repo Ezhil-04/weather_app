@@ -158,3 +158,45 @@ align-items: center;
     height: 25rem;
     
 }
+
+@media only screen and (max-width:600px){
+
+    .wrapper{
+    
+        padding: 20px;
+        border-radius: 10px;
+        background-image: linear-gradient(to bottom ,rgb(78, 250, 150), rgb(65, 218, 245), rgb(12, 226, 162));
+         /* background-color: chartreuse; */
+         width: 100vw;
+         height: 100vh;
+         display: grid;
+         grid-template-rows: 20% 30% 15% 10% 25%;
+         border-radius: 0;
+         overflow: hidden;
+    }
+    .search-box input{
+        padding-left:15px ;
+        border:0;
+        outline: 0;
+           border-radius: 45px;
+        height: 100%;
+        width: 105%;
+        font-size: medium;
+    }
+    .city h2{
+        color: aliceblue;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-stretch: ultra-expanded;
+        font-weight: 100;
+        font-size: 1.5rem;
+        letter-spacing: 4px;
+    }
+
+    .search-icon img{
+        object-fit: contain;
+        object-position: center;
+        max-width: 102%;
+        max-height: 102%;
+    }
+}
+
