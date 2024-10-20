@@ -1,9 +1,10 @@
 const apikey="dddc72e0bcb021f0debe0c6b91aa5c67";
 var apiurl="https://api.openweathermap.org/data/2.5/weather?&units=metric&q=";
+window.onload=()=>{checkweather("new york")}
 
 let search=document.getElementById("search")
 
-let icon=document.getElementById("icon")
+let icon=document.querySelector(".search-icon")
 
 icon.addEventListener("click",()=>
 {
@@ -13,7 +14,7 @@ icon.addEventListener("click",()=>
 
 
 async function checkweather(cityname){
-    const screenwidth=window.screen.width;
+
     console.clear()
     const response=await fetch(apiurl+cityname + `&appid=${apikey}`);
     var data =await response.json();
@@ -52,38 +53,37 @@ imageclass.style.display="flex"
 templass.style.display="flex"
 cityclass.style.display="flex"
 infoclass.style.display="flex"
-        if(data.weather[0].main="clouds")
+        if(data.weather[0].icon=="04n" || data.weather[0].icon=="04d")
         {
             image.src="pic/cloudy1.png"
 
         }
-       else if(data.weather[0].main="rain")
+       else if(data.weather[0].icon=="11n" || data.weather[0].icon=="11d" )
         {
             image.src="pic/rain.png"
 
         }
-       else if(data.weather[0].main="drizzle")
+       else if(data.weather[0].icon=="10n" || data.weather[0].icon=="10d")
         {
             image.src="pic/drizzle.png"
 
         }
-       else if(data.weather[0].main="clear")
+       else if(data.weather[0].icon=="01n" || data.weather[0].icon=="01d")
         {
             image.src="pic/sun.png"
 
         }
-       else if(data.weather[0].main="mist")
+       else if(data.weather[0].icon=="50n" || data.weather[0].icon=="50d")
         {
             image.src="pic/mist.png"
 
         }
-        if(screenwidth < 600){
-            wrapper.style.height="100vh"
-        }
-        else{ 
-            wrapper.style.height="30rem"
-        }
-       
+        
+        if(image.classList.contains("pop-up")){
+            image.classList.remove("pop-up")
+           
+           }
+       image.classList.add("pop-up")
     city.innerHTML=data.name;
     temp.innerHTML=Math.round(data.main.temp)+"°C";
     humidity.innerHTML=data.main.humidity+"%";
