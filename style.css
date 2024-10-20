@@ -16,8 +16,7 @@ body{
     
     padding: 20px;
     border-radius: 10px;
-    background-image: linear-gradient(to bottom ,rgb(139, 216, 252), rgb(225, 214, 244));
-     /* background-color: chartreuse; */
+     background-image: linear-gradient(to bottom ,rgb(139, 216, 252), rgb(219, 200, 252));
      width: 20rem;
      height: 30rem;
      display: grid;
