@@ -16,7 +16,7 @@ body{
     
     padding: 20px;
     border-radius: 10px;
-    background-image: linear-gradient(to bottom ,rgb(78, 250, 150), rgb(65, 218, 245), rgb(12, 226, 162));
+    background-image: linear-gradient(to bottom ,rgb(139, 216, 252), rgb(225, 214, 244));
      /* background-color: chartreuse; */
      width: 20rem;
      height: 30rem;
@@ -48,6 +48,7 @@ align-items: center;
     /* overflow: hidden; */
     
     background-color:transparent;
+    /* background-color: red; */
     width: 230px;
     height: 35px;
 
@@ -59,25 +60,40 @@ align-items: center;
        border-radius: 45px;
     height: 100%;
     width: 95%;
-    font-size: medium;
+    font-size:1.2rem ;
+    transition: all .3s ease-in-out;
+}
+.search-box input:focus{
+    box-shadow:inset 1px 1px 4px rgb(67, 67, 67);
 }
 
 .search-icon{
     border-radius: 50px;
     background-color:rgb(255, 255, 255);
-    padding: 7px;
     
-    height:32px;
-    width: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    height:35px;
+    width: 35px;
 }
 .search-icon:hover{
-    
+    cursor:pointer;
 }
+.search-icon:active{
+   transform:scale(.9);
+}
+
 .search-icon img{
     object-fit: contain;
     object-position: center;
     max-width: 100%;
     max-height: 100%;
+}
+#icon{
+      
+    height: 1rem;
 }
 .image{
     display: flex;
@@ -86,6 +102,8 @@ align-items: center;
 }
 .image img{
     height: 110px;
+   
+    
 }
 .temp{
     display: flex;
@@ -127,7 +145,7 @@ align-items: center;
 .wind{
     margin-right: 10px;
     color: aliceblue;
-   padding-right: ;
+
     display: grid;
     background-color: transparent;
     height: 100px;
@@ -158,6 +176,29 @@ align-items: center;
     height: 25rem;
     
 }
+.pop-up{
+animation:pop-up .3s .4s  ease-in-out forwards; 
+}
+.pop-down{
+    animation:pop-down.3s  ease-in-out forwards; 
+}
+@keyframes pop-up{
+    0%{
+        transform:scale(0);
+    }
+    100%{
+        transform:scale(1);
+    }
+}
+@keyframes pop-down{
+    0%{
+        transform:scale(1);
+    }
+    100%{
+        transform:scale(0);
+    }
+}
+
 @media only screen and (max-width:600px){
 
     body{
@@ -168,7 +209,7 @@ align-items: center;
     
         padding: 20px;
         border-radius: 10px;
-        background-image: linear-gradient(to bottom ,rgb(78, 250, 150), rgb(65, 218, 245), rgb(12, 226, 162));
+       
          /* background-color: chartreuse; */
          width: 100vw;
          height: 100vh;
@@ -184,7 +225,7 @@ align-items: center;
            border-radius: 45px;
         height: 115%;
         width: 105%;
-        font-size: 1.5rem;
+        font-size: 1.2rem;
     }
     .city h2{
         color: aliceblue;
@@ -195,17 +236,11 @@ align-items: center;
         letter-spacing: 4px;
     }
 
-    .search-icon img{
-        object-fit: contain;
-        object-position: center;
-        width: 80%;
-        height: 80%;
-    }
     #icon{
-        margin-top:3px ;
-        margin-left:3px;
-        height: 1.5rem;
+      
+        height: 1.2rem;
     }
+  
     .image img{
         height: 15rem;
  
@@ -215,7 +250,7 @@ align-items: center;
         margin-top:.5rem ;
         border-radius: 50px;
         background-color:rgb(255, 255, 255);
-        padding: 7px;
+       
         
         height:45px;
         width: 45px;
@@ -224,7 +259,7 @@ align-items: center;
         /* overflow: hidden; */
         
         background-color:transparent;
-        width: 250px;
+        width: 70%;
         height: 40px;
     
     }
@@ -241,4 +276,19 @@ align-items: center;
     .humidity .up img{
         margin-right: 10px;
     }
+}
+
+@media only screen and (max-width:400px){
+  
+    .wrapper{    
+        padding: 10px;
+    }
+    .up  h2{
+        font-size: 1.2rem;
+    }
+    .up #name{
+        font-size: 1rem;
+    }
+ 
+
 }
